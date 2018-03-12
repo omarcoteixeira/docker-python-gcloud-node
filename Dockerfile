@@ -56,4 +56,4 @@ RUN curl -sSJL "https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANT
     && rm -f "/tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2"
 
 
-RUN pip install virtualenv
+RUN pip install virtualenv && pip install -U pytest
